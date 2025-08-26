@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // Define para qual versão do JavaScript o TypeScript vai compilar.
+    // "ES2020" garante recursos modernos como async/await e nullish coalescing.
+    "target": "ES2020",
+
+    // Define o sistema de módulos usado no projeto.
+    // "NodeNext" é o recomendado para projetos modernos em Node.js, pois
+    // suporta tanto import/export (ESM) quanto require (CommonJS).
+    "module": "NodeNext",
+
+    // Diz ao compilador como resolver os imports.
+    // "NodeNext" segue as mesmas regras do Node.js moderno (ECMAScript Modules).
+    "moduleResolution": "NodeNext",
+
+    // Define a pasta de saída dos arquivos compilados (.js).
+    // Aqui, todos os arquivos convertidos ficarão em "./dist".
+    "outDir": "./dist",
+
+    // Define a pasta onde está o código-fonte TypeScript.
+    // Aqui, todos os arquivos .ts devem estar dentro de "./src".
+    "rootDir": "./src",
+
+    // Ativa verificações mais rigorosas do TypeScript.
+    // Inclui checagem de null/undefined, parâmetros obrigatórios, etc.
+    "strict": true,
+
+    // Permite importar módulos CommonJS usando a sintaxe de import ES6.
+    // Exemplo: import rs from "readline-sync";
+    // Sem isso, daria erro pedindo para usar require().
+    "esModuleInterop": true
+  }
+}
