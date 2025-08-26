@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "run:dist": "node dist/index.js"
+  }
+}
