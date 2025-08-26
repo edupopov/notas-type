@@ -1,0 +1,22 @@
+A explicação foi adicionada aqui pois não é permitido comentários no package.json (lembre desse detalhe )
+
+
+{
+  "scripts": {
+    // "start": executa diretamente o arquivo TypeScript (index.ts)
+    // usando o ts-node (não precisa compilar antes).
+    // Comando no terminal: npm run start
+    "start": "ts-node src/index.ts",
+
+    // "build": compila todos os arquivos TypeScript (.ts)
+    // para JavaScript (.js) dentro da pasta "dist" (definida no tsconfig.json).
+    // Comando no terminal: npm run build
+    "build": "tsc",
+
+    // "run:dist": roda a versão já compilada em JavaScript
+    // (aquele dist/index.js gerado pelo build).
+    // Útil para simular um ambiente de produção.
+    // Comando no terminal: npm run run:dist
+    "run:dist": "node dist/index.js"
+  }
+}
