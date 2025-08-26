@@ -25,8 +25,9 @@ npm i -D @types/readline-sync
 Gerar tsconfig.json
 npx tsc --init
 
+<img width="1918" height="1061" alt="image" src="https://github.com/user-attachments/assets/02722a30-4311-454f-8794-053916d73924" />
 
-Abra o tsconfig.json e garanta algo simples como:
+<b>Abra o tsconfig.json e garanta algo simples como:</b>
 
 {
   "compilerOptions": {
@@ -40,7 +41,7 @@ Abra o tsconfig.json e garanta algo simples como:
   "include": ["src"]
 }
 
-Estrutura de pastas
+<b>Estrutura de pastas</b>
 media-aluno-ts/
   ├─ src/
   │   └─ index.ts   <-- cole aqui o código
@@ -48,7 +49,7 @@ media-aluno-ts/
   └─ tsconfig.json
 
 
-Crie a pasta src e o arquivo src/index.ts, copiando o código fornecido.
+<b>Crie a pasta src e o arquivo src/index.ts, copiando o código fornecido.</b>
 
 Scripts no package.json
 
@@ -62,14 +63,13 @@ No package.json, adicione estes scripts para facilitar:
   }
 }
 
-Como executar
+<b>Como executar</b>
 
-Modo direto (sem build):
+<b>Modo direto (sem build):</b>
 
 npm run start
 
-
-Com build para JavaScript e execução do compilado:
+<b>Com build para JavaScript e execução do compilado:</b>
 
 npm run build
 npm run run:dist
@@ -77,18 +77,12 @@ npm run run:dist
 
 Dica: Se aparecer erro de permissão no Windows ao rodar scripts, abra o Terminal/PowerShell como Administrador.
 
-3) O que este exercício pratica
+<b>3) O que este exercício pratica</b>
 
 Leitura de entrada no Node com TypeScript usando readline-sync.
-
 Declaração de variáveis com tipos (string, number, number[]).
-
 Conversão de string para número (parseInt, parseFloat) e tratamento de vírgula decimal.
-
 Laços (for) para coletar notas.
-
 Estruturas condicionais: if, while (validação), switch-case (decisão do status).
-
 Interpolação de string com template literals.
-
 Formatação numérica com toFixed(2).
