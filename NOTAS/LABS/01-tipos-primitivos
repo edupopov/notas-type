@@ -1,0 +1,43 @@
+/*******************************************************
+ * TÓPICO: Tipos primitivos em TypeScript
+ * Conteúdo: string, number, boolean, null, undefined, bigint, symbol
+ * Executar: ts-node src/01-tipos-primitivos.ts
+ *******************************************************/
+
+/* EX1) string — texto simples */
+let aluno: string = "Eduardo"; // declara variável tipada como string
+console.log("[EX1] aluno:", aluno);
+
+/* EX2) number — inteiro e decimal (mesmo tipo) */
+let idade: number = 36;      // número inteiro
+let altura: number = 1.83;   // número decimal (ponto)
+console.log("[EX2] idade:", idade, "| altura:", altura);
+
+/* EX3) boolean — verdadeiro/falso (controle de fluxo) */
+let possuiAcesso: boolean = true; // pode controlar exibição de menus, etc.
+console.log("[EX3] possuiAcesso:", possuiAcesso);
+
+/* EX4) union types — variável que pode ter mais de um tipo */
+let telefone: string | number = "11-99999-0000"; // começa como string
+console.log("[EX4] telefone inicial:", telefone);
+telefone = 11999990000; // agora um number — válido por causa do union
+console.log("[EX4] telefone como number:", telefone);
+
+/* EX5) template string — interpolação + múltiplas linhas */
+let curso: string = "TypeScript";
+let frase: string = `Aluno ${aluno} está matriculado no curso de ${curso}.`;
+console.log("[EX5] frase:", frase);
+
+/* EX6) null e undefined — ausência de valor */
+let endereco: string | null = null;     // declarado mas propositalmente vazio
+let complemento: string | undefined;    // não inicializado
+console.log("[EX6] endereco:", endereco, "| complemento:", complemento);
+
+/* EX7) bigint — inteiros muito grandes (sufixo n) */
+let populacaoMundial: bigint = 8_100_000_000n; // underscore só melhora leitura
+console.log("[EX7] populacaoMundial (bigint):", populacaoMundial);
+
+/* EX8) symbol — identificadores únicos (usados em metaprogramação) */
+let chaveA: symbol = Symbol("id");
+let chaveB: symbol = Symbol("id"); // mesmo descritor, mas símbolos diferentes
+console.log("[EX8] symbols iguais pelo descritor?", chaveA === chaveB);
