@@ -1,4 +1,7 @@
-# Exercícios básicos em TypeScript (super comentados)
+# Exercícios básicos em TypeScript (execute no Playground) - https://www.typescriptlang.org/
+
+<img width="1896" height="785" alt="image" src="https://github.com/user-attachments/assets/72f35943-fb90-4717-9176-46a320a8c730" />
+
 
 ## Pré-requisitos
 - Node.js (LTS)
